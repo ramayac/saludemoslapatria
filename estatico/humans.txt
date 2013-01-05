@@ -1,0 +1,13 @@
+﻿/* TEAM */
+Diseño y desarrollo: Rodrigo Amaya
+Twitter: @ramayac
+From: El Salvador
+					
+/* THANKS */
+
+/* SITE */
+                    
+Last update: 2011/09/15 
+Language: Español
+Components: jQuery, Google Maps, Google App Engine
+Software: Netbeans

@@ -1,0 +1,10 @@
+application: saludemoslapatria
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /estatico
+  static_dir: estatico
+- url: .*
+  script: main.py

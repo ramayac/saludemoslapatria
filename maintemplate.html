@@ -1,0 +1,86 @@
+{% spaceless %}
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:og="http://ogp.me/ns#"
+      xmlns:fb="https://www.facebook.com/2008/fbml">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="cache-control" content="no-cache">
+    <title>{{ name }}</title>
+    {% include "meta.html" %}
+    <link rel="Shortcut Icon" href="/estatico/favicon.ico" type="image/x-icon" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <script type="text/javascript" src="/estatico/jquery.gomap-1.2.0.min.js"></script>
+    <script type="text/javascript" src="/estatico/core.js"></script>
+	<link rel="stylesheet" type="text/css" href="/estatico/reset.css" />
+	<link rel="stylesheet" type="text/css" href="/estatico/text.css" />
+	<link rel="stylesheet" type="text/css" href="/estatico/960_24_col.css" />
+    {% include "analytics.html" %}
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<style type="text/css">
+	body {
+		font-family: 'Oswald', sans-serif;
+		background: #062050;
+		background-image:url("/estatico/bg.png");
+		background-repeat:repeat-x;
+	}
+	h1 {
+		color: #FFCC00;
+		font-size: 26px;
+		display: inline;
+		float: left;
+		margin-bottom: 10px;
+	}
+	.grid_24 {
+		color: #FFAA00;
+		padding-top: 0px;
+		font-size: 12px;
+		float: left;
+	}
+	.escudo {
+		width: 146px;
+		height: 155px;
+		float: right;
+		top: 5px;
+		left: 10px;
+		background-image:url("/estatico/escudo.png");
+		background-repeat:no-repeat;
+		position: absolute;
+	}
+	.mapa {
+		width: 100%;
+		height: 500px;
+		margin: auto;
+	}
+	</style>
+</head>
+<body>
+	<div class="escudo"></div>
+	<div class="container_24">
+		<div class="grid_24">
+			<h1>¡Salvadoreños, saludemos la patria orgullosos...!</h1>
+		</div>
+		<div class="clear"></div>
+		<div class="grid_24">
+		<p>Este 15 de Septiembre, saludemos a nuestra patria orgullosos. Todas las personas que usen en Twitter las palabras: "Independencia" y "El Salvador" aparecerán en el mapa y estas iran formando El Salvador. Si aparece otro hashtag, me avisan :) ( la información se refresca cada 5 minutos ).</p>
+		</div>
+		<div class="grid_24">
+			<div id="map_canvas" class="mapa"></div>
+		</div>
+		<div class="clear"></div>
+		<br>
+		<div class="grid_24">
+			<div class="grid_12 alpha">
+				Este sitio esta hecho sin fines de lucro y con animos de patriotismo, lo que comenzó como un pequeño ejercicio se convirtió en un experimento para ver cuan patriotas son los twitteros salvadoreños. Espero sea de su agrado. saludos: <a href="http://twitter.com/ramayac" style="color: white;">@ramayac</a>.
+			</div>
+			<div class="grid_12 omega">
+				<a href="http://twitter.com/share" class="twitter-share-button" data-url="{{ myurl }}" data-text="¡Feliz día de la independencia de El Salvador!" 
+				data-count="vertical" data-via="ramayac" data-lang="es">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+				<script type="text/javascript" src="https://apis.google.com/js/plusone.js">{lang: 'es'}</script>
+				<g:plusone size="tall" href="{{ myurl }}"></g:plusone>
+				<iframe src="http://www.facebook.com/plugins/like.php?app_id=107790422659072&amp;href={{ myurl }}&amp;send=false&amp;layout=box_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=62" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:62px;" allowTransparency="true"></iframe>
+			</div>
+	</div>
+	</div>
+</body></html>{% endspaceless %}

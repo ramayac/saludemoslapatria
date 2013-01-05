@@ -1,0 +1,9 @@
+indexes:
+
+- kind: Busqueda
+  ancestor: no
+  properties:
+  - name: id
+    direction: asc
+  - name: pub
+    direction: desc
